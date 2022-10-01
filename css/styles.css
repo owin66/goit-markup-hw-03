@@ -13,6 +13,13 @@ body {
   font-family: 'Roboto', sans-serif, serif;
   color: var(--color-nav);
 }
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: tomato;
+  margin: 0 auto;
+}
 .logo a {
   font-style: normal;
 }

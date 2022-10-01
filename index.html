@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <title>Web Studio (Version 2.1)</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
@@ -14,34 +13,42 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
-      <a href="#" class="logo"><span lang="en">Web</span>Studio</a>
-      <nav>
-        <ul class="main-navigation">
+        <a href="#" class="logo"><span lang="en">Web</span>Studio</a>
+        <nav>
+          <ul class="main-navigation">
+            <li>
+              <a href="./index.html"><span class="studio">Студія</span></a>
+            </li>
+            <li><a href="./portfolio.html">Портфоліо</a></li>
+            <li>
+              <a href="./">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="main-info">
           <li>
-            <a href="./index.html"><span class="studio">Студія</span></a>
+            <a href="mailto:info@devstudio.com"><span lang="en">info@devstudio.com</span></a>
           </li>
-          <li><a href="./portfolio.html">Портфоліо</a></li>
-          <li>
-            <a href="./">Контакти</a>
-          </li>
+          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="main-info">
-        <li>
-          <a href="mailto:info@devstudio.com"><span lang="en">info@devstudio.com</span></a>
-        </li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
+  </div>
     <main class="filling">
-      <section class="page-main">
+      <section>
+        <div class="page-main">
         <h1 class="page-main_main-text">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="page-main_main-text_button">Замовити послугу</button>
+      </div>
       </section>
-      <section class="page-middle">
+      <section>
+        <div class="page-middle">
         <h2>Наші особливості</h2>
         <ul>
           <li>
@@ -61,8 +68,10 @@
             <p>Значимість цих проблем настільки очевидно, що реалізація планових завдань</p>
           </li>
         </ul>
+        </div>
       </section>
-      <section class="gallery">
+      <section>
+        <div class="gallery">
         <h2>Чим ми займаємося</h2>
         <ul>
           <li><img src="./images/computer.jpg" alt="computer" width="370" height="294" /></li>
@@ -70,7 +79,9 @@
           <li><img src="./images/hand.jpg" alt="tablet" width="370" height="294" /></li>
         </ul>
       </section>
-      <section class="team">
+      </div>
+      <section>
+        <div class="team">
         <h2>Наша команда</h2>
         <ul>
           <li>
@@ -94,6 +105,7 @@
             <p lang="en">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
