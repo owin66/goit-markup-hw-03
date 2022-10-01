@@ -40,7 +40,6 @@ ul {
   padding-right: 15px;
 }
 .section {
-  width: 1200px;
   display: block;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -109,9 +108,14 @@ ul {
 .main-navigation a:focus {
   color: var(--brand-color);
 }
-.nav-container {
+.section.section-button {
+  padding-bottom: 0;
+}
+header > .container {
   display: flex;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .main-info {
   display: flex;
@@ -208,10 +212,14 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.section .middle {
+  padding-bottom: 0;
+}
 .section-button {
   display: flex;
   justify-content: center;
   padding-left: 0;
+  margin-bottom: 50px;
 }
 .section-button .item-button:not(:last-child) {
   padding-right: 30px;
@@ -222,13 +230,20 @@ ul {
   flex-wrap: wrap;
   padding-left: 0;
 }
-.ul-portfolio .item-portfolio {
+.ul-portfolio.item-portfolio {
+  margin-right: 30px;
 }
-
+.item-portfolio {
+  width: calc((100% - 60px) / 3);
+}
+.text-portfolio {
+  padding: 20px 24px;
+}
 .products h3 {
   font-size: 18px;
   line-height: 2;
   color: var(--product-text-color);
+  margin-bottom: 4px;
 }
 .products p {
   line-height: 1.88;
@@ -249,6 +264,7 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .section.middle-section {
   padding-top: 0;
 }
@@ -339,6 +355,8 @@ ul {
   padding-bottom: 60px;
   background-color: var(--background-color);
   outline: 1px solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .page-footer p {
   color: var(--white-text-color);
