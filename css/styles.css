@@ -27,11 +27,15 @@ h3,
 h4,
 h5,
 h6,
-p,
-ol,
-ul {
+p {
   margin-top: 0;
   margin-bottom: 0;
+}
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .container {
   width: 1200px;
@@ -68,8 +72,9 @@ ul {
   letter-spacing: 0.02em;
 }
 .page-header .logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 .page-header ul {
   list-style-type: var(--off-list-style-type);
@@ -91,7 +96,6 @@ ul {
 }
 .main-navigation {
   display: flex;
-  margin-left: 93px;
 }
 
 .main-navigation .item:not(:last-child) {
@@ -120,7 +124,7 @@ header > .container {
   color: var(--background-text-color);
   margin-left: auto;
 }
-.main-info .item-info {
+.item-info > a {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -140,9 +144,13 @@ header > .container {
   text-decoration: var(--off-text-decoration);
   color: var(--brand-color);
 }
-.main-section {
+.section.main-section {
   background: var(--background-color);
+  border: 1px solid #ececec;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+
 .page-main {
   background: var(--background-color);
   text-align: center;
@@ -271,6 +279,9 @@ header > .container {
   justify-content: center;
   padding-left: 0;
 }
+.item-properties {
+  min-width: 270px;
+}
 .properties .item-properties:not(:last-child) {
   margin-right: 30px;
 }
@@ -302,7 +313,9 @@ header > .container {
 .work .item-work:not(:last-child) {
   margin-right: 30px;
 }
-
+.team {
+  background-color: var(--mail-color);
+}
 .team ul {
   list-style-type: var(--off-list-style-type);
 }
@@ -318,15 +331,13 @@ header > .container {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .team p {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--background-text-color);
-  padding-bottom: 30px;
 }
 .team-list {
   display: flex;
@@ -334,11 +345,17 @@ header > .container {
   padding-left: 15px;
   padding-right: 15px;
 }
+.team-desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-list .item-team:not(:last-child) {
   margin-right: 30px;
 }
 .page-footer ul {
   list-style-type: var(--off-list-style-type);
+  margin: 0;
+  padding: 0;
 }
 .page-footer a {
   text-decoration: var(--off-text-decoration);
@@ -352,8 +369,6 @@ header > .container {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-color);
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .page-footer p {
   color: var(--white-text-color);
@@ -361,8 +376,7 @@ header > .container {
   line-height: 1.46;
   letter-spacing: 0.03em;
   font-weight: 400;
-
-  padding-top: 20px;
+  margin-bottom: 9px;
 }
 .white-logo {
   color: var(--white-text-color);
@@ -392,20 +406,22 @@ header > .container {
   text-decoration: var(--off-text-decoration);
   color: var(--brand-color);
 }
-.info-footer {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 0;
-}
+
 .logo-footer {
+  display: block;
   font-family: 'Raleway';
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--white-text-color);
-
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .logo-footer > span {
   color: var(--brand-color);
+}
+.item-infos {
+  margin-bottom: 9px;
+}
+.info-footer.item-info:not(:last-child) {
+  margin-bottom: 9px;
 }
