@@ -13,6 +13,27 @@ body {
   font-family: 'Roboto', sans-serif, serif;
   color: var(--color-nav);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0 auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: 1px solid tomato;
+}
 .logo a {
   font-style: normal;
 }
@@ -30,15 +51,19 @@ body {
   color: var(--product-text-color);
 }
 .page-header {
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  background-color: tomato;
   margin: 0 auto;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  width: 1200px;
+  outline: 1px solid tomato;
+}
+.page-header .logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 .page-header ul {
   list-style-type: var(--off-list-style-type);
@@ -57,15 +82,33 @@ body {
 .studio {
   color: var(--brand-color);
 }
-.main-navigation a:link {
-  color: var(--brand-color);
+.main-navigation {
+  display: flex;
+}
+.main-navigation .item {
+  outline: 1px solid tomato;
+}
+.main-navigation .item:not(:last-child) {
+  margin-right: 50px;
+}
+.main-navigation .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .main-navigation a:hover,
 .main-navigation a:focus {
   color: var(--brand-color);
 }
 .main-info {
+  display: flex;
   color: var(--background-text-color);
+}
+.main-info .item-info {
+  outline: 1px solid tomato;
+}
+.main-info .item-info:not(:last-child) {
+  margin-right: 50px;
 }
 .main-info a:link {
   color: var(--background-text-color);
@@ -82,11 +125,15 @@ body {
 }
 .page-main {
   background: var(--background-color);
+  width: 1200px;
+  height: 600px;
 }
 .page-middle ul {
   list-style-type: var(--off-list-style-type);
 }
 .page-main_main-text {
+  box-sizing: border-box;
+  margin: 0 auto 30px auto;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -94,6 +141,8 @@ body {
   font-size: 44px;
   line-height: 1.36;
   color: var(--white-text-color);
+  width: 696px;
+  height: 120px;
 }
 .page-main_main-text_button {
   background: var(--brand-color);
@@ -104,6 +153,7 @@ body {
   font-weight: 700;
   cursor: pointer;
   font-family: inherit;
+  box-sizing: inherit;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -201,7 +251,14 @@ body {
   line-height: 1.71;
 }
 .page-footer {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0 auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
   background-color: var(--background-color);
+  outline: 1px solid tomato;
 }
 .page-footer p {
   color: var(--white-text-color);
