@@ -39,9 +39,10 @@ ul {
 }
 .container {
   width: 1200px;
-  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section {
   display: block;
@@ -228,22 +229,21 @@ header > .container {
   margin-bottom: 50px;
 }
 .section-button .item-button:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 .ul-portfolio {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  padding-left: 0;
+  flex-basis: calc((100% - 60px) / 3);
 }
 .ul-portfolio.item-portfolio:not(:last-child) {
   margin-right: 30px;
 }
-.item-portfolio {
-  width: calc((100% - 60px) / 3);
-}
 .text-portfolio {
   padding: 20px 24px;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
 }
 .products h3 {
   font-size: 18px;
