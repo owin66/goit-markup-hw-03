@@ -8,6 +8,7 @@
   --white-text-color: #ffffff;
   --product-text-color: #212121;
   --mail-color: rgba(255, 255, 255, 0.6);
+  --less-white-for-bg: #f5f4fa;
 }
 html {
   box-sizing: border-box;
@@ -305,7 +306,7 @@ header > .container {
   margin-right: 30px;
 }
 .team {
-  background-color: var(--mail-color);
+  background-color: var(--less-white-for-bg);
 }
 .team ul {
   list-style-type: var(--off-list-style-type);
