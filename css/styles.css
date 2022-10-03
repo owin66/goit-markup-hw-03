@@ -149,10 +149,6 @@ header > .container {
   background: var(--background-color);
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-.page-main {
-  background: var(--background-color);
   text-align: center;
 }
 .section-button ul {
